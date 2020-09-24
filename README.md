@@ -76,6 +76,10 @@ Adds a listener to a property of the watchable. The property need not exist yet.
 
 Removes the given listener from the watch list on that property. If you added an anonymous function as a listener, you'll have needed to have kept a reference to it somewhere for this to work.
 
+## watchable.listeners(property)
+
+Returns an array of all the listener functions on that property.
+
 ## watchable[property]._rawValue_
 
 Gets the raw (unwrapped) value of a property in case you need the non-proxied version for some reasons.
